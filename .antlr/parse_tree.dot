@@ -1,0 +1,33 @@
+digraph G {
+  "428566321" [label="(write-line\"Hello, World!\")(write-line\"Another string with an escape: \"Quote\"\")<EOF>"];
+  "428566321" -> "2087258327";
+  "2087258327" [label="(write-line\"Hello, World!\")"];
+  "2087258327" -> "1016550616";
+  "1016550616" [label="(write-line\"Hello, World!\")"];
+  "1016550616" -> "1006094903";
+  "1006094903" [label="("];
+  "1016550616" -> "2030538903";
+  "2030538903" [label="write-line\"Hello, World!\""];
+  "2030538903" -> "1293680848";
+  "1293680848" [label="write-line"];
+  "2030538903" -> "1261153343";
+  "1261153343" [label="\"Hello, World!\""];
+  "1016550616" -> "1309176095";
+  "1309176095" [label=")"];
+  "428566321" -> "198099809";
+  "198099809" [label="(write-line\"Another string with an escape: \"Quote\"\")"];
+  "198099809" -> "645482568";
+  "645482568" [label="(write-line\"Another string with an escape: \"Quote\"\")"];
+  "645482568" -> "807752428";
+  "807752428" [label="("];
+  "645482568" -> "1026055550";
+  "1026055550" [label="write-line\"Another string with an escape: \"Quote\"\""];
+  "1026055550" -> "1073763441";
+  "1073763441" [label="write-line"];
+  "1026055550" -> "752316209";
+  "752316209" [label="\"Another string with an escape: \"Quote\"\""];
+  "645482568" -> "914356853";
+  "914356853" [label=")"];
+  "428566321" -> "1229161065";
+  "1229161065" [label="<EOF>"];
+}
